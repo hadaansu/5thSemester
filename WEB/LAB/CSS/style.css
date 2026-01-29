@@ -1,0 +1,20 @@
+ p{
+        color:blue;
+         font-size:10px;
+    }
+    h2{
+        color: red;
+        font-size:10px;
+    }
+    button{
+        color:lightgreen;
+        background-color:beige;
+    }
+    a{
+        color: brown;
+    }
+    div{
+        color:lightpink;
+        border: 2px dashed black;
+        background-color:bisque;
+    }
