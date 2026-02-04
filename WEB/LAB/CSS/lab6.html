@@ -1,0 +1,51 @@
+<html>
+    <head><style>
+      a[target]
+      {
+        background-color:antiquewhite;
+      }
+      input[type="text"]
+      {
+        border:1px solid gray;
+      }
+      [title~="flower"]
+      {
+        border:2px solid brown;;
+      }
+      [title|="top"]
+      {
+        background-color:bisque;
+      }
+      [title^=op]{
+        background-color:aqua;
+      }
+      [title$="test"]
+      {
+        background:yellow;
+      }
+      [title*="ny"]
+      {
+        background:pink;
+      }
+
+    </style>
+    </head>
+    <body>
+        <a href="" target="_blank">https://www.google.com/</a> <br> <br>
+        Enter name:<input type="text">
+        <p title="flower">
+            Hi flower </p>
+            <p title="my flower">my flower</p>
+            <p title="flowers"> Not applied.</p>
+        <p title="top">
+            Hi Anshu </p>
+            <p title="text">Not Applied.</p>
+            <p title="top-flower">Applied.</p>
+        <p title="opdown">opdown</p>
+        <p title="Updown">Updown</p>
+        <p title="class test">classtest applied</p>
+        <p title="test class">testclass not applied.</p>
+        <p title="sunny">sunny applied</p>
+        <p title="hello">hello not applied</p>
+    </body>
+</html>

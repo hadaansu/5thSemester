@@ -1,0 +1,39 @@
+<html>
+<head>
+
+  <style>
+    /* Descendant: any p inside div */
+    div p {
+      color: blue;
+    }
+
+    /* Child: direct h3 child of div */
+    div > h3 {
+      color: green;
+    }
+
+    /* Adjacent sibling: first p immediately after h3 */
+    h3 + p {
+      font-weight: bold;
+    }
+
+    /* General sibling: all p after h3 (same parent) */
+    h3 ~ p {
+      background-color:pink;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h3>Heading 1 (child of div)</h3>
+    <p>First paragraph after h3 (adjacent sibling)</p>
+    <p>Second paragraph after h3 (general sibling)</p>
+    <section>
+      <p>Nested paragraph inside section (descendant)</p>
+    </section>
+  </div>
+
+</body>
+</html>
