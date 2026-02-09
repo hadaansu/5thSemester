@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        div {
+            width: 300px;
+            border: 2px solid black;
+            background: #f2f2f2;
+        }
+
+        div.one {
+            margin: 20px;
+        }
+
+        div.two {
+            margin: 20px 40px;
+        }
+
+        div.three {
+            margin: 10px 30px 50px;
+        }
+
+        div.four {
+            margin: 10px 20px 30px 40px;
+        }
+
+        div.auto {
+            margin: 20px auto;
+        }
+
+        div.parent {
+            margin-top: 50px;
+            padding: 10px;
+            background: lightblue;
+        }
+
+        div.child {
+            margin-top: inherit;
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using individual margin properties</h2>
+     <div class="one">
+        Single value margin.
+    </div>
+
+    <div class="two">
+        Two value margin.
+    </div>
+
+   
+
+    <div class="three">
+        Three value margin.
+    </div>
+
+    <div class="four">
+        Four value margin.
+    </div>
+
+    <div class="auto">
+        Auto margin.
+    </div>
+
+    <div class="parent">
+        Parent
+        <div class="child">Child (margin-top: inherit)</div>
+    </div>
+</body>
+</html>

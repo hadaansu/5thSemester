@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #333;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: visible; /* default */
+        }
+
+        .visible {
+            overflow: visible;
+            background-color: #f8d7da;
+        }
+
+        .hidden {
+            overflow: hidden;
+            background-color: #d1ecf1;
+        }
+
+        .scroll {
+            overflow: scroll;
+            background-color: #d4edda;
+        }
+
+        .auto {
+            overflow: auto;
+            background-color: #fff3cd;
+        }
+
+        /* Extra: make content larger than box */
+        .content {
+            width: 300px;
+            height: 200px;
+            background-color: rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow Property Demo</h1>
+    <div class="container">
+        <div class="box visible">
+            <h3>Overflow: Visible</h3>
+            <div class="content">
+                <p>This content is bigger than the box, so it overflows visibly.</p>
+            </div>
+        </div>
+
+        <div class="box hidden">
+            <h3>Overflow: Hidden</h3>
+            <div class="content">
+                <p>This content is bigger than the box, but the overflow is hidden.</p>
+            </div>
+        </div>
+
+        <div class="box scroll">
+            <h3>Overflow: Scroll</h3>
+            <div class="content">
+                <p>This content is bigger than the box, and scrollbars appear.</p>
+            </div>
+        </div>
+
+        <div class="box auto">
+            <h3>Overflow: Auto</h3>
+            <div class="content">
+                <p>This content is bigger than the box. Scrollbars appear only if needed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

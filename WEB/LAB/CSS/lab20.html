@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+            }
+            .container{
+                width: 400px;
+                margin: 50px auto;
+                background-color: lightgray;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            h1{
+                text-align: center;
+                color: black;
+                margin-bottom: 20px;
+            }
+            label{
+                display: block;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            input,textarea{
+                width:100%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 2px solid #ccc;
+                height: auto;
+
+
+            }
+            input:focus, textarea:focus{
+                outline:auto;
+                border: 2px solid black;
+            }
+            textarea{
+                height:60px;
+                resize: vertical;
+            }
+            button{
+                background-color: green;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h1>Contact Us</h1>
+                
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name" required><br><br>
+                <label>Email:</label>
+                <input type="text" placeholder="Enter your email" required><br><br>
+                <label>Message:</label>
+                <textarea placeholder="Enter your message" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max-width Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .box-width {
+            width: 600px;
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 20px auto;
+            color: white;
+        }
+
+        .box-max-width {
+            max-width: 600px;
+            background-color: seagreen;
+            padding: 20px;
+            margin: 20px auto;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Difference between width and max-width</h2>
+
+    <div class="box-width">
+        This box uses <b>width: 600px</b>.  
+        It will NOT resize on smaller screens.
+    </div>
+
+    <div class="box-max-width">
+        This box uses <b>max-width: 600px</b>.  
+        It WILL resize on smaller screens.
+    </div>
+
+</body>
+</html>

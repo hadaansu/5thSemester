@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            height: 2000px; /* needed to test fixed & sticky */
+        }
+
+        .box {
+            width: 200px;
+            height: 80px;
+            padding: 10px;
+            margin: 15px;
+            color: white;
+        }
+
+        /* 1. static (default) */
+        .static {
+            position: static;
+            background-color: gray;
+        }
+
+        /* 2. relative */
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: blue;
+        }
+
+        /* 3. absolute */
+        .parent {
+            position: relative;
+            border: 2px solid black;
+            height: 150px;
+            margin: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: green;
+        }
+
+        /* 4. fixed */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: red;
+        }
+
+        /* 5. sticky */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box static">Static Position</div>
+
+    <div class="box relative">Relative Position</div>
+
+    <div class="parent">
+        Parent Div
+        <div class="box absolute">Absolute Position</div>
+    </div>
+
+    <div class="box sticky">Sticky Position (scroll)</div>
+
+    <div class="box fixed">Fixed Position</div>
+
+</body>
+</html>
