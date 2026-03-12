@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Event Demo</title>
+</head>
+<body>
+
+<h3>Keyboard Event Demonstration</h3>
+
+<input type="text" id="textbox" onkeyup="showKey()" placeholder="Type something here">
+
+<p id="message"></p>
+
+<script>
+
+function showKey(){
+    document.getElementById("message").innerHTML =
+    "You pressed a key on the keyboard!";
+}
+
+</script>
+
+</body>
+</html>

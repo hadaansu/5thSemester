@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculate Operations</title>
+</head>
+<body>
+
+<h3>Enter Two Numbers</h3>
+
+<input type="number" id="num1" placeholder="Enter first number">
+<br><br>
+
+<input type="number" id="num2" placeholder="Enter second number">
+<br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+
+    let sum = a + b;
+    let difference = a - b;
+    let multiplication = a * b;
+
+    document.getElementById("result").innerHTML =
+        "Sum: " + sum + "<br>" +
+        "Difference: " + difference + "<br>" +
+        "Multiplication: " + multiplication;
+}
+</script>
+
+</body>
+</html>

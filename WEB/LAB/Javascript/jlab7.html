@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Event Demo</title>
+
+<style>
+#box{
+    width:200px;
+    height:150px;
+    background-color:lightgray;
+    text-align:center;
+    line-height:150px;
+    border:2px solid black;
+}
+</style>
+
+</head>
+<body>
+
+<h3>Mouse Event Demonstration</h3>
+
+<div id="box"
+     onmouseover="mouseOver()"
+     onmouseout="mouseOut()"
+     onclick="mouseClick()">
+     Move Mouse Here
+</div>
+
+<p id="msg"></p>
+
+<script>
+
+function mouseOver(){
+    document.getElementById("box").style.backgroundColor="yellow";
+    document.getElementById("msg").innerHTML="Mouse is over the division";
+}
+
+function mouseOut(){
+    document.getElementById("box").style.backgroundColor="lightgray";
+    document.getElementById("msg").innerHTML="Mouse left the division";
+}
+
+function mouseClick(){
+    document.getElementById("msg").innerHTML="Division was clicked";
+}
+
+</script>
+
+</body>
+</html>

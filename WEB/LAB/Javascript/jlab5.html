@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Division Style Change</title>
+
+<style>
+.division{
+    width:200px;
+    height:100px;
+    margin:10px;
+}
+
+#div1{
+    background:red;
+}
+
+#div2{
+    background:blue;
+}
+
+#div3{
+    background:green;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="div1" class="division"></div>
+<div id="div2" class="division"></div>
+<div id="div3" class="division"></div>
+
+<button onclick="changeStyle()">Change</button>
+
+<script>
+
+function changeStyle(){
+
+    document.getElementById("div1").style.background="pink";
+    document.getElementById("div1").style.border="5px solid green";
+    document.getElementById("div1").style.borderRadius="20px";
+
+    document.getElementById("div2").style.background="lightblue";
+    document.getElementById("div2").style.border="5px solid yellow";
+    document.getElementById("div2").style.borderRadius="30px";
+
+    document.getElementById("div3").style.background="lightgreen";
+    document.getElementById("div3").style.border="5px solid blue";
+
+}
+
+</script>
+
+</body>
+</html>
