@@ -1,20 +1,24 @@
 //insertion sort
 #include <stdio.h>
 
+// insertion sort
+#include <iostream>
+using namespace std;
+
 int main()
 {
     int a[10], n, i, j, key;
 
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+    cout << "Enter number of elements: ";
+    cin >> n;
 
-    printf("Enter elements:\n");
+    cout << "Enter elements:\n";
     for(i = 0; i < n; i++)
-        scanf("%d", &a[i]);
+        cin >> a[i];
 
-    printf("\nInitial Array: ");
+    cout << "\nInitial Array: ";
     for(i = 0; i < n; i++)
-        printf("%d ", a[i]);
+        cout << a[i] << " ";
 
     // Insertion Sort with tracing
     for(i = 1; i < n; i++)
@@ -31,14 +35,14 @@ int main()
         a[j + 1] = key;
 
         // Tracing step
-        printf("\nAfter Pass %d: ", i);
+        cout << "\nAfter Pass " << i << ": ";
         for(j = 0; j < n; j++)
-            printf("%d ", a[j]);
+            cout << a[j] << " ";
     }
 
-    printf("\n\nSorted Array: ");
+    cout << "\n\nSorted Array: ";
     for(i = 0; i < n; i++)
-        printf("%d ", a[i]);
+        cout << a[i] << " ";
 
     return 0;
 }
