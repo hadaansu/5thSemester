@@ -1,20 +1,21 @@
 // selection sort
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
     int a[10], n, i, j, min, temp;
 
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+    cout << "Enter number of elements: ";
+    cin >> n;
 
-    printf("Enter elements:\n");
+    cout << "Enter elements:\n";
     for(i = 0; i < n; i++)
-        scanf("%d", &a[i]);
+        cin >> a[i];
 
-    printf("\nInitial Array: ");
+    cout << "\nInitial Array: ";
     for(i = 0; i < n; i++)
-        printf("%d ", a[i]);
+        cout << a[i] << " ";
 
     // Selection Sort with tracing
     for(i = 0; i < n - 1; i++)
@@ -33,14 +34,14 @@ int main()
         a[min] = temp;
 
         // Tracing step
-        printf("\nAfter Pass %d: ", i + 1);
+        cout << "\nAfter Pass " << i + 1 << ": ";
         for(j = 0; j < n; j++)
-            printf("%d ", a[j]);
+            cout << a[j] << " ";
     }
 
-    printf("\n\nSorted Array: ");
+    cout << "\n\nSorted Array: ";
     for(i = 0; i < n; i++)
-        printf("%d ", a[i]);
+        cout << a[i] << " ";
 
     return 0;
 }
