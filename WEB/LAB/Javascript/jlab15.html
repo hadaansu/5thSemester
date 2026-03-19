@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Equality</title>
+</head>
+<body>
+
+<h3>Check String Equality</h3>
+
+<input type="text" id="str1" placeholder="Enter first string">
+<input type="text" id="str2" placeholder="Enter second string">
+<button onclick="checkStrings()">Check</button>
+
+<p id="output"></p>
+
+<script>
+function checkStrings() {
+    let s1 = document.getElementById("str1").value;
+    let s2 = document.getElementById("str2").value;
+
+    if (s1 === s2) {
+        document.getElementById("output").innerHTML = s1.toUpperCase();
+    } else {
+        document.getElementById("output").innerHTML = "Strings are not equal";
+    }
+}
+</script>
+
+</body>
+</html>

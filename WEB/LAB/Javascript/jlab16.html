@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+
+<h3>Array Methods Demo</h3>
+
+<button onclick="showArrayMethods()">Run Array Methods</button>
+
+<p id="result"></p>
+
+<script>
+function showArrayMethods() {
+    let arr = [3, 1, 5, 2];
+
+    let output = "";
+
+    // push
+    arr.push(10);
+    output += "After push(10): " + arr + "<br>";
+
+    // pop
+    arr.pop();
+    output += "After pop(): " + arr + "<br>";
+
+    // shift
+    arr.shift();
+    output += "After shift(): " + arr + "<br>";
+
+    // unshift
+    arr.unshift(99);
+    output += "After unshift(99): " + arr + "<br>";
+
+    // sort
+    arr.sort();
+    output += "After sort(): " + arr + "<br>";
+
+    // reverse
+    arr.reverse();
+    output += "After reverse(): " + arr + "<br>";
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

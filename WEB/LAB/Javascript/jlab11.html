@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h3>String Methods</h3>
+
+<input type="text" id="sentence" placeholder="Enter a sentence">
+<button onclick="getLength()">Get Length</button>
+<button onclick="toUpper()">Convert to Uppercase</button>
+<button onclick="toLower()">Convert to Lowercase</button>
+<br><br>
+
+<input type="text" id="fname" placeholder="Enter first name">
+<input type="text" id="lname" placeholder="Enter last name">
+<button onclick="concatName()">Concat</button>
+<br><br>
+
+<input type="text" id="sliceText" placeholder="Enter a sentence">
+<input type="number" id="start" placeholder="Enter start index">
+<input type="number" id="end" placeholder="Enter end index">
+<button onclick="sliceText()">Slice</button>
+
+<p id="output"></p>
+
+<script>
+function getLength() {
+    let text = document.getElementById("sentence").value;
+    document.getElementById("output").innerHTML = "Length: " + text.length;
+}
+
+function toUpper() {
+    let text = document.getElementById("sentence").value;
+    document.getElementById("output").innerHTML = text.toUpperCase();
+}
+
+function toLower() {
+    let text = document.getElementById("sentence").value;
+    document.getElementById("output").innerHTML = text.toLowerCase();
+}
+
+function concatName() {
+    let f = document.getElementById("fname").value;
+    let l = document.getElementById("lname").value;
+    document.getElementById("output").innerHTML = f.concat(" ", l);
+}
+
+function sliceText() {
+    let text = document.getElementById("sliceText").value;
+    let start = parseInt(document.getElementById("start").value);
+    let end = parseInt(document.getElementById("end").value);
+    document.getElementById("output").innerHTML = text.slice(start, end);
+}
+</script>
+
+</body>
+</html>
