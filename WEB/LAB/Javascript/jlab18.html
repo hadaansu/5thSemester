@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <button onclick="show()">Enter 10 students name</button>
+        <p id="para"></p>
+        <script>
+            function show(){
+                var arr=[];
+                for(var i=1;i<=10;i++){
+                    arr[i]=prompt("Enter name of  student: "+i);
+                }
+                var result=arr.join("<br>");
+                
+                document.getElementById("para").innerHTML="Student names:"+result;
+
+            }
+        </script>
+    </body>
+</html>

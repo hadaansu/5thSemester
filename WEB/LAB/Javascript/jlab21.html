@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+        <p id="para"></p>
+        <script>
+                 var str = "Web programming is fun to learn but at the same time programming is difficult too. Web programming is core course in BIM third semester";
+                 var count=0;
+                 var words=str.toLowerCase().split(" ");
+                 for(var i=0;i<words.length;i++){
+                    if(words[i]=="programming")
+                    count++;
+                 }
+                 
+
+                 document.getElementById("para").innerHTML="Original String: Web programming is fun to learn but at the same time programming is difficult too. Web programming is core course in BIM third semester"+"<br>"+"Numebr of times programming is repeated="+count;
+
+
+            
+            
+        </script>
+    </body>
+</html>

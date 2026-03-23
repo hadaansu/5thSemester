@@ -1,0 +1,16 @@
+
+<html>
+    <body>
+            <p id="para"></p>
+        <script>
+            var arr=['apple','orange','mango'];
+            function add(oii){
+                 arr=arr.concat(oii);
+            }
+            add(['banana','grapes','avocado']);
+            arr.pop();
+            arr.pop();
+            document.getElementById("para").innerHTML="Final fruits array = "+arr.toString();
+        </script>
+    </body>
+</html>

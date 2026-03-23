@@ -1,0 +1,30 @@
+
+<html>
+    <body>
+        <p id="para"></p>
+        <script>
+                var str="web programming is amazing and exciting to learn";
+                var length=str.length;
+                var reverse=str.split("").reverse().join("");
+                var search=str.includes("exciting");
+                var trimmed=str.trim();
+                var arr=str.split(" ");
+                var charPos=str.charAt(8);
+                var part=str.substring(2,10);
+                var replaced=str.replace("programming","technology");
+
+                document.getElementById("para").innerHTML=
+                "Original String:"+str+"<br><br>"+
+                "Length: " + length + "<br>" +
+                "Reverse: " + reverse + "<br>" +
+                "Contains 'exciting': " + search + "<br>" +
+                "Trimmed: " + trimmed + "<br>" +
+                "Array: " + arr.join(", ") + "<br>" +
+                "Character at position 8: " + charPos + "<br>" +
+                "Substring (2 to 10): " + part + "<br>" +
+                "Replaced String: " + replaced;
+
+            
+        </script>
+    </body>
+</html>
