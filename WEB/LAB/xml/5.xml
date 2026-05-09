@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE student [
+    <!ELEMENT student (name, age)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+
+    <!ATTLIST student
+        id ID #REQUIRED
+        type (regular | scholarship) "regular"
+        status CDATA #IMPLIED
+    >
+]>
+
+<student id="S01" type="regular" status="active">
+    <name>ram</name>
+    <age>17</age>
+</student>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:d1="http://example.com/detail1"
+      xmlns:d2="http://example.com/detail2">
+
+    <d1:detail>
+        <d1:name>Mango</d1:name>
+        <d1:price>200</d1:price>
+    </d1:detail>
+
+    <d2:detail>
+        <d2:name>Bir Bahadur</d2:name>
+        <d2:address>Kalanki</d2:address>
+    </d2:detail>
+
+</root>

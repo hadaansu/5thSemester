@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library [
+    <!ELEMENT library (sciencesection, accountsection)>
+
+    <!ELEMENT sciencesection (book+)>
+    <!ELEMENT accountsection (book+)>
+
+    <!ELEMENT book (name, author)>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+]>
+
+<library>
+    <sciencesection>
+        <book>
+            <name>Biology</name>
+            <author>D.K. Khadka</author>
+        </book>
+        <book>
+            <name>Physics</name>
+            <author>R.R. Karmacharya</author>
+        </book>
+    </sciencesection>
+
+    <accountsection>
+        <book>
+            <name>Managerial Accounting</name>
+            <author>G.P. Amatya</author>
+        </book>
+    </accountsection>
+</library>

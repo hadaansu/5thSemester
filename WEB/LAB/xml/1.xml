@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<music>
+
+    <song>
+        <name>Shape of You</name>
+        <artist>Ed Sheeran</artist>
+        <playtime>4:24</playtime>
+    </song>
+
+    <song>
+        <name>Blinding Lights</name>
+        <artist>The Weeknd</artist>
+        <playtime>3:20</playtime>
+    </song>
+
+    <song>
+        <name>Believer</name>
+        <artist>Imagine Dragons</artist>
+        <playtime>3:35</playtime>
+    </song>
+
+</music>
